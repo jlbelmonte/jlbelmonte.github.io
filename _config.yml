@@ -6,25 +6,19 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Juan Luis Belmonte Mendez
-title: Software Engineer
+name: Juan Luis Belmonte Méndez
+title: | 
+  Software Engineer 
+  
+   - Portland, OR
 email: hello@1984.st
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: never
 
 # Social links
 github_username:  jlbelmonte
-linkedin_username: jameswgrant
-
-# Additional icon links
-additional_links:
-#- title: itsgoingto.be
-#  icon: fas fa-globe
-#  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+linkedin_username: jlbmen
 
 
 # About Section
@@ -32,69 +26,150 @@ additional_links:
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I understand the different needs of products in their different stages because I have developed software at tiny startups as well as large companies. Whether I am developing a full stack feature from the user end  to the stored bytes, or scaling/extending a  highly distributed system focusing on replication, or  physical bottle necks,  I always take a pragmatic approach to anything I do.
-I volunteer informed technical opinions to my team when appropriate, either when troubleshooting or mentoring.  I am always open to honest feedback from team members at any level. 
-The thing that I am most proud of is my work ethic - if I commit to something, I do anything I can to achieve it.
+  I volunteer informed technical opinions to my team when appropriate, either when troubleshooting or mentoring.  I am always open to honest feedback from team members at any level. 
+  The thing that I am most proud of is my work ethic - if I commit to something, I do anything I can to achieve it.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+    - layout: left
+      border: weak
+      title: Meta.
+      link: meta.com
+      # link_text: boringcompany.com
+      sub_title: Senior Production Engineer
+      caption: October 2022 - November 2022 (laid off)
+      quote: > 
+        Production engineer bootcamp.
+      description: | 
+  
+        * During the short 4 weeks of bootcamp I got to work on:
+        * Refactoring a viewport library for oculus AR in Kotlin.
+        * I Helped migrating few CLI utils from python to rust for ZippyDB's (key value store) team.
+        * Wrote a quota reatribution pipeline using dataswarm (similar to Airflow.)
 
+    - layout: left
+      border: weak
+      title: Twitter.
+      link: twitter.com
+      sub_title: Senior Software Engineer
+      caption: August 2020 - July 2022
+      quote: > 
+        Tweetypie  AKA tweet service + URL services.
+        High-volume tweet backend that serves all the tweet read 10MMs/s and writes 10Ks/s traffic, providing easy to use  all primitives for Tweets and URLs to build products on top of them.
+      description: | 
+        * Designed and built a tool to compare requests between services in a distributed environment to validate equality between systems during development and pre-production stages.
+        * Migrated a variety of live URLs events processing services from standalone services to the internal serverless platform (strato).
+        * Privacy focus: I worked on tightening our team’s privacy policies and processes, implemented time sensitive wipeout in persistent datasets, and worked closely with consumers helping them adapt to our new policies.
+        * Mentoring of 2 Jr. SWEs, helping them through the onboarding until they were fully autonomous contributors.
+        * URL shortener 40K/s reads 4K/s writes
+        * URL hydration system maintenance and customer support 500K/s reads 80K/s writes.
+        * Participated in on-call duty and helped in many team and company-wide incidents.
+        * **Languages and technologies**: `Scala`, `Kafka`, `Kafka Streams`, `Finagle`, `Twemcache`, `Hive`, `Scalding`, `BigQuery`, `Presto`, `GCP`, `Distributed Systems`, various internal data stores graph, and Key/Value, Strato/StratoQL - https://t.co/eDjTBJ5lHJ.
+    - layout: left
+      border: weak
+      title: Flow
+      link: flowinc.com
+      sub_title: Lead backend engineer, and all things infra.
+      caption: November 2017 - Present
+      quote: >
+        Accelerating funds in the private markets. Flexible infrastructure connecting investment professionals with their limited partners and service providers.             
+    
+      description: |
+        * Document processing services, and internal e-sign solution.
+        * Cross org collaboration (CTO, PM, CEO) to build the product roadmap. 
+        * Wrote the initial version of the SAAS offering APIs.
+        * Built a single button deploy prod/staging system.
+        * Tech manager for a team of 3 people.
+        * **Languages and technologies**: `Rails`, `Java`, `Chef`, `Postgres`, `AWS`, `S3`, `Lambda`, `ec2`,`SaaS`, `Fintech`.
+    - layout: left
+      border: weak
+      title: Twitter
+      link: twitter.com
+      sub_title: Senior Software Engineer
+      caption: July 2018 - October 2018
+      quote: >
+        Helping twitter search infra to become faster.
+      description: | 
+        * Worked speeding up the ingesting/indexing pipeline of new tweets. Moving the indexing time from 15s to 1s. - https://t.co/7husTlNWgC.
+        * **Languages and technologies**: `Java`, `Scala`, `Apache Lucene`, `Apache pipelines`, `Distributed Systems`.      
+    - layout: left
+      border: weak
+      title: Tumblr
+      link: tumblr.com
+      sub_title: Senior Software Engineer
+      caption: October 2015 - April 2018
+      quote: >
+        Tumblr is a website. Social network? No, it's a mycelial network. It's wholesome chaos. It's the gay people in your phone.It's your angel. It's your devil. Tumblr is whatever you want it to be.
+      description: | # this will include new lines to allow paragraphs
+        * Rewrote the Tumblr firehose real time event streaming. 
+        * Scaled the CDN purging service from Low thousands media URLs per hour to millions per hour.    
+        * Low level protocol implementation of Gearman libraries in Scala.
+        * Participated in on-call duty and helped in many team, and company-wide incidents. 
+        * Oversaw 15 different services that impacted Tumblr’s product directly.
+        * **Languages and technologies**: `Scala`, `Akka`, `Kafka`, `Colossus`, `Gearman`, `Spray.io`, `Scalding`
+    - layout: left
+      border: weak
+      title: Nitro PDF
+      link: gonitro.com
+      sub_title: Platform Engineer
+      caption: July June 2014 - August 2015
+      quote: >
+        Smarter PDF, eSign and document productivity tools
+      description: | 
+        * Platform services for Business integrations between host installed and online products. 
+        * Worked on rebuilding the online offering from a monolithic play 1.2 app to a series of Scala services.
+        * Built a document processing pipeline for documents.
+        * Built the online auth & auth services and payment platform.
+        * Built the entitlements platform for Single user and Multi user accounts.
+        * **Languages and technologies**: `Scala`, `Akka`, `Play! Framework`, `Slick`, `Kafka`, `Avro`, `OCR`, `rabitMQ`.
+    - layout: left
+      border: weak
+      title: Talentbin
+      link: talentbin.com
+      # link_text: boringcompany.com
+      sub_title: Software Engineer
+      caption: July June 2014 - August 2015
+      quote: >
+        World’s largest passive candidate database for companies and recruiting agencies.
+      description: | # this will include new lines to allow paragraphs
+        * Built a system to auto scalie and pick zones for dynamic cluster sizing based on computation needs and optimizing for price.
+        * Custom Business intelligence application for customer success, to  gain insights on customer churn.
+        * Identity matching, and deduplication system from gathered data. 
+        * **Languages and technologies**: `Java`, `Play! Framework`, `Slick`, `python`, `php`, `MySQL`.
+    - layout: left
+      border: weak
+      title: Masterbranch
+      link: masterbranch.com (defunkt)
+      # link_text: boringcompany.com
+      sub_title: CTO / Co-Founder
+      caption: July Aug 2008 - August 2012
+      quote: >
+        Masterbranch was the largest database of Open-Source projects in the world (800k+ projects tracked) at the time.                
+      description: | # this will include new lines to allow paragraphs
+        * Grew the team from the three founders to seven, including an inside sale, a UI Designer, and a Product Manager.
+        * Raised $360k from angel investors in Spain and moved the company to the USA.
+        * **Languages and technologies**: `Cassandra`, `Java`, `Play! Framework`, `Apache Solr`, `MySQL`, `AWS`, `EC2`.
+    - layout: left
+      border: weak
+      title: Google  Summer of code
+      # link_text: boringcompany.com
+      sub_title: Software engineer
+      caption: July May 2008 - August 2008
+      quote: >
+       Debian PAM NSS Installer.
+      description: |
+          Collaborated with Debian by creating PAM NSS Debian Installer to improve install-time support of PAM and NSS modules configuration. As part of the Google summer of code 08.
+          * **Languages and technologies**: `Perl`, `Debian`, `Debian Package Manager.`
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
-
+        title: Universidad de Zaragoza
+        caption: 2002 - 2008
+        sub_title: BSc Computer Engineering - focus in computer systems
+       
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
@@ -106,5 +181,3 @@ sass:
   sass_dir: _sass
   style: compressed
 
-plugins:
- - jekyll-seo-tag
