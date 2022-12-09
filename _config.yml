@@ -45,9 +45,9 @@ content:
       description: | 
   
         * During the short 4 weeks of bootcamp I got to work on:
-        * Refactoring a viewport library for oculus AR in `Kotlin``.
-        * I Helped migrating few CLI utils from python to `rust`` for ZippyDB's (key value store) team.
-        * Wrote a quota reatribution pipeline using `dataswarm`` (similar to `Airflow``.)
+        * Refactoring a viewport library for oculus AR in `Kotlin`.
+        * I Helped migrating few CLI utils from python to `rust` for ZippyDB's (key value store) team.
+        * Wrote a quota reatribution pipeline using `dataswarm` (similar to `Airflow`.)
 
     - layout: left
       border: weak
